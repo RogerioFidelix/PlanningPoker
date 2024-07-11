@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D628C3BB2C3EF4D800920CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3BA2C3EF4D800920CBF /* AppDelegate.swift */; };
+		D628C3BD2C3EF4D800920CBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3BC2C3EF4D800920CBF /* SceneDelegate.swift */; };
+		D628C3BF2C3EF4D800920CBF /* CardDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3BE2C3EF4D800920CBF /* CardDeckViewController.swift */; };
+		D628C3C22C3EF4D800920CBF /* MainWithDeckView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D628C3C02C3EF4D800920CBF /* MainWithDeckView.storyboard */; };
+		D628C3C42C3EF4D800920CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D628C3C32C3EF4D800920CBF /* Assets.xcassets */; };
+		D628C3C72C3EF4D800920CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D628C3C52C3EF4D800920CBF /* LaunchScreen.storyboard */; };
+		D628C3D22C3EF4D900920CBF /* PlanningPokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3D12C3EF4D900920CBF /* PlanningPokerTests.swift */; };
+		D628C3DC2C3EF4D900920CBF /* PlanningPokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3DB2C3EF4D900920CBF /* PlanningPokerUITests.swift */; };
+		D628C3DE2C3EF4D900920CBF /* PlanningPokerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3DD2C3EF4D900920CBF /* PlanningPokerUITestsLaunchTests.swift */; };
+		D628C3ED2C3F319600920CBF /* CardDeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3EC2C3F319600920CBF /* CardDeckViewModel.swift */; };
+		D628C3EF2C3F31E700920CBF /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3EE2C3F31E700920CBF /* CardCollectionCell.swift */; };
+		D628C3F12C3F324800920CBF /* CardDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3F02C3F324800920CBF /* CardDeckView.swift */; };
+		D628C3F32C3F326600920CBF /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3F22C3F326500920CBF /* CardData.swift */; };
+		D628C3F52C3F327F00920CBF /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3F42C3F327F00920CBF /* CardFrontView.swift */; };
+		D628C3F72C3F32CC00920CBF /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3F62C3F32CC00920CBF /* CardDeck.swift */; };
+		D628C3F92C3F32E300920CBF /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3F82C3F32E300920CBF /* CollectionLayout.swift */; };
+		D628C3FB2C3F331700920CBF /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3FA2C3F331700920CBF /* CardBackView.swift */; };
+		D628C3FD2C3F333E00920CBF /* CardBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C3FC2C3F333E00920CBF /* CardBorder.swift */; };
+		D628C4012C3F358200920CBF /* XibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C4002C3F358200920CBF /* XibLoadable.swift */; };
+		D628C4032C3F38F100920CBF /* CardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D628C4022C3F38F100920CBF /* CardCollectionCell.xib */; };
+		D628C4052C3F39E200920CBF /* CardBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D628C4042C3F39E200920CBF /* CardBackView.xib */; };
+		D628C4072C3F3A5100920CBF /* CardFrontView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D628C4062C3F3A5100920CBF /* CardFrontView.xib */; };
+		D628C4092C3F4E5300920CBF /* SelectedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C4082C3F4E5300920CBF /* SelectedCardViewController.swift */; };
+		D628C40B2C3F4E7A00920CBF /* SelectedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628C40A2C3F4E7A00920CBF /* SelectedCardViewModel.swift */; };
+		D628C40D2C3F518D00920CBF /* SelectedCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D628C40C2C3F518D00920CBF /* SelectedCardViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D628C3CE2C3EF4D900920CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D628C3AF2C3EF4D800920CBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D628C3B62C3EF4D800920CBF;
+			remoteInfo = PlanningPoker;
+		};
+		D628C3D82C3EF4D900920CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D628C3AF2C3EF4D800920CBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D628C3B62C3EF4D800920CBF;
+			remoteInfo = PlanningPoker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D628C3B72C3EF4D800920CBF /* PlanningPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanningPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C3BA2C3EF4D800920CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D628C3BC2C3EF4D800920CBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D628C3BE2C3EF4D800920CBF /* CardDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckViewController.swift; sourceTree = "<group>"; };
+		D628C3C12C3EF4D800920CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainWithDeckView.storyboard; sourceTree = "<group>"; };
+		D628C3C32C3EF4D800920CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D628C3C62C3EF4D800920CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D628C3C82C3EF4D800920CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D628C3CD2C3EF4D900920CBF /* PlanningPokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanningPokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C3D12C3EF4D900920CBF /* PlanningPokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerTests.swift; sourceTree = "<group>"; };
+		D628C3D72C3EF4D900920CBF /* PlanningPokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanningPokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C3DB2C3EF4D900920CBF /* PlanningPokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerUITests.swift; sourceTree = "<group>"; };
+		D628C3DD2C3EF4D900920CBF /* PlanningPokerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D628C3EC2C3F319600920CBF /* CardDeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckViewModel.swift; sourceTree = "<group>"; };
+		D628C3EE2C3F31E700920CBF /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
+		D628C3F02C3F324800920CBF /* CardDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckView.swift; sourceTree = "<group>"; };
+		D628C3F22C3F326500920CBF /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		D628C3F42C3F327F00920CBF /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
+		D628C3F62C3F32CC00920CBF /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		D628C3F82C3F32E300920CBF /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		D628C3FA2C3F331700920CBF /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
+		D628C3FC2C3F333E00920CBF /* CardBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBorder.swift; sourceTree = "<group>"; };
+		D628C4002C3F358200920CBF /* XibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadable.swift; sourceTree = "<group>"; };
+		D628C4022C3F38F100920CBF /* CardCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionCell.xib; sourceTree = "<group>"; };
+		D628C4042C3F39E200920CBF /* CardBackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardBackView.xib; sourceTree = "<group>"; };
+		D628C4062C3F3A5100920CBF /* CardFrontView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardFrontView.xib; sourceTree = "<group>"; };
+		D628C4082C3F4E5300920CBF /* SelectedCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCardViewController.swift; sourceTree = "<group>"; };
+		D628C40A2C3F4E7A00920CBF /* SelectedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCardViewModel.swift; sourceTree = "<group>"; };
+		D628C40C2C3F518D00920CBF /* SelectedCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedCardViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D628C3B42C3EF4D800920CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3CA2C3EF4D900920CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3D42C3EF4D900920CBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D628C3AE2C3EF4D800920CBF = {
+			isa = PBXGroup;
+			children = (
+				D628C3B92C3EF4D800920CBF /* PlanningPoker */,
+				D628C3D02C3EF4D900920CBF /* PlanningPokerTests */,
+				D628C3DA2C3EF4D900920CBF /* PlanningPokerUITests */,
+				D628C3B82C3EF4D800920CBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D628C3B82C3EF4D800920CBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3B72C3EF4D800920CBF /* PlanningPoker.app */,
+				D628C3CD2C3EF4D900920CBF /* PlanningPokerTests.xctest */,
+				D628C3D72C3EF4D900920CBF /* PlanningPokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D628C3B92C3EF4D800920CBF /* PlanningPoker */ = {
+			isa = PBXGroup;
+			children = (
+				D628C4102C3FE6F500920CBF /* Extensions+Helpers */,
+				D628C40F2C3FE6AE00920CBF /* CardComposition */,
+				D628C40E2C3FE68F00920CBF /* CardViewController */,
+				D628C3EB2C3F316900920CBF /* CardDeckViewController */,
+				D628C3EA2C3EF5D900920CBF /* Configs */,
+				D628C3C32C3EF4D800920CBF /* Assets.xcassets */,
+				D628C3C52C3EF4D800920CBF /* LaunchScreen.storyboard */,
+				D628C3C82C3EF4D800920CBF /* Info.plist */,
+			);
+			path = PlanningPoker;
+			sourceTree = "<group>";
+		};
+		D628C3D02C3EF4D900920CBF /* PlanningPokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3D12C3EF4D900920CBF /* PlanningPokerTests.swift */,
+			);
+			path = PlanningPokerTests;
+			sourceTree = "<group>";
+		};
+		D628C3DA2C3EF4D900920CBF /* PlanningPokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3DB2C3EF4D900920CBF /* PlanningPokerUITests.swift */,
+				D628C3DD2C3EF4D900920CBF /* PlanningPokerUITestsLaunchTests.swift */,
+			);
+			path = PlanningPokerUITests;
+			sourceTree = "<group>";
+		};
+		D628C3EA2C3EF5D900920CBF /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3BA2C3EF4D800920CBF /* AppDelegate.swift */,
+				D628C3BC2C3EF4D800920CBF /* SceneDelegate.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		D628C3EB2C3F316900920CBF /* CardDeckViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3BE2C3EF4D800920CBF /* CardDeckViewController.swift */,
+				D628C3C02C3EF4D800920CBF /* MainWithDeckView.storyboard */,
+				D628C3EC2C3F319600920CBF /* CardDeckViewModel.swift */,
+				D628C3F62C3F32CC00920CBF /* CardDeck.swift */,
+				D628C3F82C3F32E300920CBF /* CollectionLayout.swift */,
+			);
+			name = CardDeckViewController;
+			sourceTree = "<group>";
+		};
+		D628C40E2C3FE68F00920CBF /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D628C4082C3F4E5300920CBF /* SelectedCardViewController.swift */,
+				D628C40C2C3F518D00920CBF /* SelectedCardViewController.xib */,
+				D628C40A2C3F4E7A00920CBF /* SelectedCardViewModel.swift */,
+			);
+			path = CardViewController;
+			sourceTree = "<group>";
+		};
+		D628C40F2C3FE6AE00920CBF /* CardComposition */ = {
+			isa = PBXGroup;
+			children = (
+				D628C3FC2C3F333E00920CBF /* CardBorder.swift */,
+				D628C3F02C3F324800920CBF /* CardDeckView.swift */,
+				D628C3F22C3F326500920CBF /* CardData.swift */,
+				D628C4022C3F38F100920CBF /* CardCollectionCell.xib */,
+				D628C3EE2C3F31E700920CBF /* CardCollectionCell.swift */,
+				D628C4042C3F39E200920CBF /* CardBackView.xib */,
+				D628C3FA2C3F331700920CBF /* CardBackView.swift */,
+				D628C4062C3F3A5100920CBF /* CardFrontView.xib */,
+				D628C3F42C3F327F00920CBF /* CardFrontView.swift */,
+			);
+			path = CardComposition;
+			sourceTree = "<group>";
+		};
+		D628C4102C3FE6F500920CBF /* Extensions+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D628C4002C3F358200920CBF /* XibLoadable.swift */,
+			);
+			path = "Extensions+Helpers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D628C3B62C3EF4D800920CBF /* PlanningPoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D628C3E12C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPoker" */;
+			buildPhases = (
+				D628C3B32C3EF4D800920CBF /* Sources */,
+				D628C3B42C3EF4D800920CBF /* Frameworks */,
+				D628C3B52C3EF4D800920CBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanningPoker;
+			productName = PlanningPoker;
+			productReference = D628C3B72C3EF4D800920CBF /* PlanningPoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D628C3CC2C3EF4D900920CBF /* PlanningPokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D628C3E42C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPokerTests" */;
+			buildPhases = (
+				D628C3C92C3EF4D900920CBF /* Sources */,
+				D628C3CA2C3EF4D900920CBF /* Frameworks */,
+				D628C3CB2C3EF4D900920CBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D628C3CF2C3EF4D900920CBF /* PBXTargetDependency */,
+			);
+			name = PlanningPokerTests;
+			productName = PlanningPokerTests;
+			productReference = D628C3CD2C3EF4D900920CBF /* PlanningPokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D628C3D62C3EF4D900920CBF /* PlanningPokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D628C3E72C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPokerUITests" */;
+			buildPhases = (
+				D628C3D32C3EF4D900920CBF /* Sources */,
+				D628C3D42C3EF4D900920CBF /* Frameworks */,
+				D628C3D52C3EF4D900920CBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D628C3D92C3EF4D900920CBF /* PBXTargetDependency */,
+			);
+			name = PlanningPokerUITests;
+			productName = PlanningPokerUITests;
+			productReference = D628C3D72C3EF4D900920CBF /* PlanningPokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D628C3AF2C3EF4D800920CBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D628C3B62C3EF4D800920CBF = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D628C3CC2C3EF4D900920CBF = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D628C3B62C3EF4D800920CBF;
+					};
+					D628C3D62C3EF4D900920CBF = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D628C3B62C3EF4D800920CBF;
+					};
+				};
+			};
+			buildConfigurationList = D628C3B22C3EF4D800920CBF /* Build configuration list for PBXProject "PlanningPoker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D628C3AE2C3EF4D800920CBF;
+			productRefGroup = D628C3B82C3EF4D800920CBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D628C3B62C3EF4D800920CBF /* PlanningPoker */,
+				D628C3CC2C3EF4D900920CBF /* PlanningPokerTests */,
+				D628C3D62C3EF4D900920CBF /* PlanningPokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D628C3B52C3EF4D800920CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D628C3C72C3EF4D800920CBF /* LaunchScreen.storyboard in Resources */,
+				D628C3C42C3EF4D800920CBF /* Assets.xcassets in Resources */,
+				D628C3C22C3EF4D800920CBF /* MainWithDeckView.storyboard in Resources */,
+				D628C4032C3F38F100920CBF /* CardCollectionCell.xib in Resources */,
+				D628C40D2C3F518D00920CBF /* SelectedCardViewController.xib in Resources */,
+				D628C4072C3F3A5100920CBF /* CardFrontView.xib in Resources */,
+				D628C4052C3F39E200920CBF /* CardBackView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3CB2C3EF4D900920CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3D52C3EF4D900920CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D628C3B32C3EF4D800920CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D628C4012C3F358200920CBF /* XibLoadable.swift in Sources */,
+				D628C3F72C3F32CC00920CBF /* CardDeck.swift in Sources */,
+				D628C3EF2C3F31E700920CBF /* CardCollectionCell.swift in Sources */,
+				D628C40B2C3F4E7A00920CBF /* SelectedCardViewModel.swift in Sources */,
+				D628C3BF2C3EF4D800920CBF /* CardDeckViewController.swift in Sources */,
+				D628C3FD2C3F333E00920CBF /* CardBorder.swift in Sources */,
+				D628C3F32C3F326600920CBF /* CardData.swift in Sources */,
+				D628C3ED2C3F319600920CBF /* CardDeckViewModel.swift in Sources */,
+				D628C4092C3F4E5300920CBF /* SelectedCardViewController.swift in Sources */,
+				D628C3F52C3F327F00920CBF /* CardFrontView.swift in Sources */,
+				D628C3BB2C3EF4D800920CBF /* AppDelegate.swift in Sources */,
+				D628C3F12C3F324800920CBF /* CardDeckView.swift in Sources */,
+				D628C3F92C3F32E300920CBF /* CollectionLayout.swift in Sources */,
+				D628C3FB2C3F331700920CBF /* CardBackView.swift in Sources */,
+				D628C3BD2C3EF4D800920CBF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3C92C3EF4D900920CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D628C3D22C3EF4D900920CBF /* PlanningPokerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D628C3D32C3EF4D900920CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D628C3DC2C3EF4D900920CBF /* PlanningPokerUITests.swift in Sources */,
+				D628C3DE2C3EF4D900920CBF /* PlanningPokerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D628C3CF2C3EF4D900920CBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D628C3B62C3EF4D800920CBF /* PlanningPoker */;
+			targetProxy = D628C3CE2C3EF4D900920CBF /* PBXContainerItemProxy */;
+		};
+		D628C3D92C3EF4D900920CBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D628C3B62C3EF4D800920CBF /* PlanningPoker */;
+			targetProxy = D628C3D82C3EF4D900920CBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D628C3C02C3EF4D800920CBF /* MainWithDeckView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D628C3C12C3EF4D800920CBF /* Base */,
+			);
+			name = MainWithDeckView.storyboard;
+			sourceTree = "<group>";
+		};
+		D628C3C52C3EF4D800920CBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D628C3C62C3EF4D800920CBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D628C3DF2C3EF4D900920CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D628C3E02C3EF4D900920CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D628C3E22C3EF4D900920CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPoker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainWithDeckView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D628C3E32C3EF4D900920CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPoker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainWithDeckView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D628C3E52C3EF4D900920CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlanningPoker";
+			};
+			name = Debug;
+		};
+		D628C3E62C3EF4D900920CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlanningPoker";
+			};
+			name = Release;
+		};
+		D628C3E82C3EF4D900920CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPoker;
+			};
+			name = Debug;
+		};
+		D628C3E92C3EF4D900920CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.PlanningPokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPoker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D628C3B22C3EF4D800920CBF /* Build configuration list for PBXProject "PlanningPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D628C3DF2C3EF4D900920CBF /* Debug */,
+				D628C3E02C3EF4D900920CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D628C3E12C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D628C3E22C3EF4D900920CBF /* Debug */,
+				D628C3E32C3EF4D900920CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D628C3E42C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D628C3E52C3EF4D900920CBF /* Debug */,
+				D628C3E62C3EF4D900920CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D628C3E72C3EF4D900920CBF /* Build configuration list for PBXNativeTarget "PlanningPokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D628C3E82C3EF4D900920CBF /* Debug */,
+				D628C3E92C3EF4D900920CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D628C3AF2C3EF4D800920CBF /* Project object */;
+}
